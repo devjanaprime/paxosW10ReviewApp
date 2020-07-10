@@ -56,3 +56,4 @@ Phase 6
 ===
 
 - use a ListItem component for each item in the list
+- use conditional rendering in LitstItem (useing a state variable)
