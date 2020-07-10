@@ -3,6 +3,10 @@ import InventoryList from '../InventoryList/InventoryList';
 import Axios from 'axios';
 
 class Inventory extends Component {
+  state = {
+    items: []
+  } // end state
+
   componentDidMount(){
     console.log( 'Inventory mounted' );  
     this.getItems(); 
@@ -14,7 +18,11 @@ class Inventory extends Component {
       method: 'GET',
       url: '/inventory'
     }).then( ( response ) =>{
-      console.log( 'back from GET:', response );
+      console.log( 'back from GET:', response.data );
+      // hold this data in state.items
+      this.setState({
+        items: response.data
+      }); 
     }).catch( ( err )=>{
       console.log( err );
       alert( 'nope' );
@@ -25,7 +33,7 @@ class Inventory extends Component {
     return (
       <div>
         <h1>Inventory</h1>
-        <InventoryList />
+        <InventoryList items={ this.state.items }/>
       </div>
     ); // end return
   } // end render
