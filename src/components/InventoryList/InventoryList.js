@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import InventoryItem from '../InventoryItem/InventoryItem';
 
 class InventoryList extends Component {
   componentDidMount(){
@@ -10,7 +11,7 @@ class InventoryList extends Component {
       <div>
         <h1>InventoryList</h1>
         <ul>
-          { this.props.items.map( ( item, index )=><li key={ index }>{ item.description }</li>  )}
+          { this.props.items.map( ( item, index )=><InventoryItem thisItem={ item } key={ index }/>)}
         </ul>
       </div>
     ); // end return
