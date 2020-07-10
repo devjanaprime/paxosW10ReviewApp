@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Template from './components/_template/_template';
+import Inventory from './components/Inventory/Inventory';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Template />
+    <Inventory />
   </React.StrictMode>,
   document.getElementById('root')
 );

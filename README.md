@@ -28,3 +28,15 @@ setup react files (src folder)
 
 - create "components" folder
 - set up components
+
+Phase 2 (Layer1) set up server:
+===
+
+- modules/routers
+- test handshake (is it sending back the data you want - tested GET via browser)
+
+Phase 2 (Layer 2) set up Components
+===
+
+- use template to put Inventory component on DOM
+- created InventoryList and mounted it into Inventory
