@@ -51,3 +51,8 @@ Phase 5 (4 corners)
 
 - get data from parent component & pass to child as props
 - basic display of the 411 on DOM (used .map)
+
+Phase 6
+===
+
+- use a ListItem component for each item in the list
